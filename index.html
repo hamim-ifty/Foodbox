@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Global Delights - Food Ordering</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Global Delights!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <div class="food-item">
+                <img src="images/karjalanpiirakka.jpg" alt="Karjalanpiirakka">
+                <h3>Karjalanpiirakka</h3>
+                <p>Traditional Karelian pasty filled with rice.</p>
+                <button onclick="order('Karjalanpiirakka')">Order Now</button>
+            </div>
+            <div class="food-item">
+                <img src="images/lohikeitto.jpg" alt="Lohikeitto">
+                <h3>Lohikeitto</h3>
+                <p>Classic salmon soup with potatoes and cream.</p>
+                <button onclick="order('Lohikeitto')">Order Now</button>
+            </div>
+            <div class="food-item">
+                <img src="images/poronkäristys.jpg" alt="Poronkäristys">
+                <h3>Poronkäristys</h3>
+                <p>Sauteed reindeer served with mashed potatoes.</p>
+                <button onclick="order('Poronkäristys')">Order Now</button>
+            </div>
+            <div class="food-item">
+                <img src="images/sushi.jpg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Fresh sushi platter with assorted fish and vegetables.</p>
+                <button onclick="order('Sushi')">Order Now</button>
+            </div>
+            <div class="food-item">
+                <img src="images/tacos.jpg" alt="Tacos">
+                <h3>Tacos</h3>
+                <p>Mexican tacos filled with seasoned meat, fresh vegetables, and cheese.</p>
+                <button onclick="order('Tacos')">Order Now</button>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>At Global Delights, we bring you flavors from all around the world. From traditional Finnish dishes to popular international cuisines, we have something for everyone. Enjoy a delightful culinary journey with us!</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Global Delights. All Rights Reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
