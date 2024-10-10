@@ -1,80 +1,101 @@
+<!-- HTML (index.html) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Global Delights - Food Ordering</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Global Delights!</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="animate__animated animate__fadeInDown">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>Global <span>Delights</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">EN</a> / <a href="#">FI</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+    <section class="hero-banner animate__animated animate__fadeIn">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Do you want an international culinary experience?</h2>
+                <h1>The answer is <span>Global Delights</span></h1>
+                <a href="#menu" class="hero-button">Order Now</a>
+            </div>
+        </div>
+    </section>
     <main>
-        <section id="menu" class="menu">
+        <section id="menu" class="menu animate__animated animate__fadeInUp">
             <h2>Our Menu</h2>
-            <div class="food-item">
-                <img src="images/karjalanpiirakka.jpg" alt="Karjalanpiirakka">
-                <h3>Karjalanpiirakka</h3>
-                <p>Traditional Karelian pasty filled with rice.</p>
-                <button onclick="order('Karjalanpiirakka')">Order Now</button>
-            </div>
-            <div class="food-item">
-                <img src="images/lohikeitto.jpg" alt="Lohikeitto">
-                <h3>Lohikeitto</h3>
-                <p>Classic salmon soup with potatoes and cream.</p>
-                <button onclick="order('Lohikeitto')">Order Now</button>
-            </div>
-            <div class="food-item">
-                <img src="images/poronkäristys.jpg" alt="Poronkäristys">
-                <h3>Poronkäristys</h3>
-                <p>Sauteed reindeer served with mashed potatoes.</p>
-                <button onclick="order('Poronkäristys')">Order Now</button>
-            </div>
-            <div class="food-item">
-                <img src="images/sushi.jpg" alt="Sushi">
-                <h3>Sushi</h3>
-                <p>Fresh sushi platter with assorted fish and vegetables.</p>
-                <button onclick="order('Sushi')">Order Now</button>
-            </div>
-            <div class="food-item">
-                <img src="images/tacos.jpg" alt="Tacos">
-                <h3>Tacos</h3>
-                <p>Mexican tacos filled with seasoned meat, fresh vegetables, and cheese.</p>
-                <button onclick="order('Tacos')">Order Now</button>
+            <div class="food-grid">
+                <div class="food-item animate__animated animate__zoomIn">
+                    <img src="images/karjalanpiirakka.jpg" alt="Karjalanpiirakka">
+                    <h3>Karjalanpiirakka</h3>
+                    <p>Traditional Karelian pasty filled with rice.</p>
+                    <button onclick="order('Karjalanpiirakka')">Order Now</button>
+                </div>
+                <div class="food-item animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+                    <img src="images/lohikeitto.jpg" alt="Lohikeitto">
+                    <h3>Lohikeitto</h3>
+                    <p>Classic salmon soup with potatoes and cream.</p>
+                    <button onclick="order('Lohikeitto')">Order Now</button>
+                </div>
+                <div class="food-item animate__animated animate__zoomIn" style="animation-delay: 0.4s;">
+                    <img src="images/poronkäristys.jpg" alt="Poronkäristys">
+                    <h3>Poronkäristys</h3>
+                    <p>Sauteed reindeer served with mashed potatoes.</p>
+                    <button onclick="order('Poronkäristys')">Order Now</button>
+                </div>
+                <div class="food-item animate__animated animate__zoomIn" style="animation-delay: 0.6s;">
+                    <img src="images/sushi.jpg" alt="Sushi">
+                    <h3>Sushi</h3>
+                    <p>Fresh sushi platter with assorted fish and vegetables.</p>
+                    <button onclick="order('Sushi')">Order Now</button>
+                </div>
+                <div class="food-item animate__animated animate__zoomIn" style="animation-delay: 0.8s;">
+                    <img src="images/tacos.jpg" alt="Tacos">
+                    <h3>Tacos</h3>
+                    <p>Mexican tacos filled with seasoned meat, fresh vegetables, and cheese.</p>
+                    <button onclick="order('Tacos')">Order Now</button>
+                </div>
             </div>
         </section>
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>At Global Delights, we bring you flavors from all around the world. From traditional Finnish dishes to popular international cuisines, we have something for everyone. Enjoy a delightful culinary journey with us!</p>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <section id="contact" class="contact animate__animated animate__fadeIn">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Send Message</button>
-            </form>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Global Delights. All Rights Reserved.</p>
+    <footer class="animate__animated animate__fadeInUp">
+        <div class="container">
+            <p>&copy; 2024 Global Delights. All Rights Reserved.</p>
+        </div>
     </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
+
