@@ -1,6 +1,3 @@
-/* JavaScript (scripts.js) */
 function order(item) {
-    alert(`You have ordered: ${item}`);
+    alert(`You have ordered: ${item}.\n\nThis is a static website, we don't take orders!`);
 }
-
-/* Add actual images to the images/ folder with the filenames specified in the code */
